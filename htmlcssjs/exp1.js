@@ -13,7 +13,7 @@ minutes = minutes < 10 ? '0' + minutes : minutes;
 seconds = seconds < 10 ? '0' + seconds : seconds;
 
 console.log(`Current day and time is: ${dayOfWeek} ${hours}:${minutes}:${seconds}`);
-//fbgfg
+
 
 
 
