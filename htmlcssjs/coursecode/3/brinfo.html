@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Browser Information</h2>
+    <p id="browser-info"></p>
+
+    <script>
+        function getBrowserInfo() {
+            const info = `
+                Browser Name: ${navigator.appName} <br>
+                Browser Version: ${navigator.appVersion} <br>
+                User Agent: ${navigator.userAgent} <br>
+                Platform: ${navigator.platform} <br>
+                Language: ${navigator.language} <br>
+                Cookies Enabled: ${navigator.cookieEnabled} <br>
+            `;
+            document.getElementById("browser-info").innerHTML = info;
+        }
+
+        getBrowserInfo();
+    </script>
+</body>
+</html>
