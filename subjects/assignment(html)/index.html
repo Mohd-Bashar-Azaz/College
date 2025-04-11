@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Mohd Bashar Azaz</h1>
+        <img src="profile.jpg" alt="Profile Image" class="profile-img">
+        <p>Passionate Full-Stack Developer specializing in React.js, Node.js, and MongoDB.</p>
+    </header>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>E-commerce Platform</h3>
+            <p>An online marketplace with secure payment integration.</p>
+        </div>
+        <div class="project">
+            <h3>Vegingo App</h3>
+            <p>A B2B solution for the agriculture industry.</p>
+        </div>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>A personal website to showcase my work.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .profile-img {
+            width: 150px;
+            border-radius: 50%;
+            margin: 10px 0;
+        }
+        #projects, #contact {
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .project {
+            background: #e0e0e0;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #555;
+        }
+    </style>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for your message! I will get back to you soon.");
+            this.reset();
+        });
+    </script>
+</body>
+</html>
