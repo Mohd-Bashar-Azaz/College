@@ -1,0 +1,2 @@
+Hello from Node.js File System Module!
+This line was appended using fs.appendFile().
